@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.compa.readerocr.LoginActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="@string/text_lb_select_language"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+		    android:id="@+id/languageSpiner"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:entries="@array/language_array" />
+        
+        <Spinner
+		    android:id="@+id/thresholdText"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:entries="@array/threshold_array" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="2dip"
+            android:background="#fff"
+            android:text="@string/text_btn_login"
+            android:textColor="#ff6347" />
+    </LinearLayout>
+
+</RelativeLayout>
